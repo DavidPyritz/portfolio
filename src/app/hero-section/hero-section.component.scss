@@ -1,0 +1,13 @@
+@use '../../app/shared/styles/mixins.scss' as*;
+@import '../../../src/styles.scss';
+
+section {
+    
+}
+
+content {
+    background-color: $darkgrey-background;
+    @include display(flex);
+    height: 100vh;
+    width: 100%;
+}
