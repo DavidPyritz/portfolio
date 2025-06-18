@@ -1,13 +1,29 @@
 @use '../../app/shared/styles/mixins.scss' as*;
-@import '../../../src/styles.scss';
 
 section {
-    
+    width: 100%;
 }
 
 content {
-    background-color: $darkgrey-background;
-    @include display(flex);
+    @include display(flex, column, flex-start, flex-start);
     height: 100vh;
     width: 100%;
+    // padding: 60px 120px 0px 120px;
+    padding-top: 60px;
+    position: relative;
+}
+
+.profil-pic {
+    object-fit: cover;
+    width: 256px;
+    height: 256px;
+    z-index: 2;
+}
+
+.shape {
+    position: absolute;
+    top: -30px;
+    left: -100px;
+    z-index: 1;
+    width: 450px;
 }

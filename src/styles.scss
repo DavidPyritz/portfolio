@@ -1,13 +1,12 @@
 @use './app/shared/styles/fonts.scss' as*;
-$darkgrey-background: rgba(38, 46, 52, 1);
-$font-color: rgba(248, 245, 236, 1);
-$symbol-font-color: rgba(137, 188, 217, 1);
+@use './app/shared/styles/mixins.scss' as*;
 
 * {
-    margin: 0 auto;
+    margin: 0;
     box-sizing: border-box;
     font-family: 'Lato';
     scroll-behavior: smooth;
+    background-color: $darkgrey-background;
 }
 
 a {
@@ -17,4 +16,12 @@ a {
 .title {
     font-size: 88px;
     font-weight: bold;
+}
+
+main {
+    max-width: 1920px;
+    margin: 0 auto;
+    width: 100%;
+    padding-left: 120px;
+    padding-right: 120px;
 }
